@@ -1,40 +1,52 @@
-# Welcome to your Lovable project
+# Loyalty Flow 87 - Customer Service Management System
 
-## Project info
+A modern customer service management platform built with React, TypeScript, and Tailwind CSS. This application provides comprehensive tools for managing customer cases, campaigns, reports, and more.
 
-**URL**: https://lovable.dev/projects/2eba1106-cb96-435a-a69f-ac0602590728
+## Getting Started
 
-## How can I edit this code?
+### Prerequisites
 
-There are several ways of editing your application.
+- Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/2eba1106-cb96-435a-a69f-ac0602590728) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+### Installation
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate to the project directory
+cd loyalty-flow-87
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
+
+The application will start in development mode and open at `http://localhost:5173`.
+
+## Configuration
+
+### Theme Settings
+
+The application defaults to dark mode. Users can change the theme using the theme toggle in the application header. The theme preference is stored in local storage and persists across sessions.
+
+To modify the default theme, edit the `defaultTheme` prop in `src/App.tsx`:
+
+```tsx
+<ThemeProvider defaultTheme="dark" storageKey="servicehub-theme">
+```
+
+## Development
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+- `npm run typecheck` - Run TypeScript type checking
 
 **Edit a file directly in GitHub**
 
@@ -50,24 +62,26 @@ npm run dev
 - Click on "New codespace" to launch a new Codespace environment.
 - Edit files directly within the Codespace and commit and push your changes once you're done.
 
+## Features
+
+- **Dashboard**: Overview of key metrics and performance indicators
+- **Case Management**: Track and manage customer service cases
+- **Customer Database**: Comprehensive customer information management
+- **Campaign Management**: Create and monitor marketing campaigns
+- **Reports & Analytics**: Generate detailed reports and insights
+- **Template System**: Reusable templates for common workflows
+- **Notifications**: Real-time notification system
+- **Dark Mode**: Application defaults to dark mode for reduced eye strain
+
 ## What technologies are used for this project?
 
 This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/2eba1106-cb96-435a-a69f-ac0602590728) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- **Vite**: Fast build tool and development server
+- **TypeScript**: Type-safe JavaScript
+- **React**: UI library
+- **shadcn-ui**: Modern component library
+- **Tailwind CSS**: Utility-first CSS framework
+- **React Router**: Client-side routing
+- **Tanstack Query**: Data fetching and caching
+- **Recharts**: Data visualization library
